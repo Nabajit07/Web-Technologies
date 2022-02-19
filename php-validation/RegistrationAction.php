@@ -129,11 +129,7 @@ if (!empty($Permanent_Address)){
 if (strlen($userName) > 5) {
 	echo "Username cannot be greater than 5 characters (Requred->Fill Information)<br>";
 }
-	else {
-		echo " user name is :".$userName ;
-		echo "<br><br>";
-	}
-
+	
 
 	if (empty($password)){
 		echo "Password is not given (Requred->Fill Information) <br>";
@@ -146,18 +142,11 @@ if (strlen($userName) > 5) {
 	if (empty($Confirm_password)){
 		echo "Confirm Password is not given (Requred->Fill Information) <br>";
 	}
-	else {
-		echo "Password is: ".$Confirm_password;
-		echo "<br><br>";
-	}
-
+	
 if($password !== ($Confirm_password)){
 	echo " password doesn't match (Requred->Fill Information) <br>";
 }
-	else
-	 { 
-	echo "Confirm Password is:".$Confirm_password;
-	}
+	
 }
 	?>
 
